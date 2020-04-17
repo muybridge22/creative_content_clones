@@ -93,7 +93,7 @@ function checkForMatch() {
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId [1]
     if (cardsChosen [0] === cardsChosen [1]){
-        alert('You found a match')
+        alert("CLONE ALERT! PREPARE FOR AUTO-DESTRUCT")
         cards [optionOneId].setAttribute ('src', 'images/white.png')
         cards [optionTwoId].setAttribute ('src', 'images/white.png')
         cardsWon.push(cardsChosen)
@@ -101,14 +101,14 @@ function checkForMatch() {
     } else {
         cards [optionOneId].setAttribute ('src', 'images/blank.png')
         cards [optionTwoId].setAttribute ('src', 'images/blank.png')
-        alert('Sorry, try again')
+        alert('NO CLONES HERE TRY AGAIN')
     }
 
     cardsChosen = []
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length 
     if (cardsWon.length === cardsArray.length/2 ) {
-        resultDisplay.textContent = 'Congratulations! You found them all!'
+        resultDisplay.textContent = 'Congratulations! All Creative Content Clones destroyed'
     }
 }
   
